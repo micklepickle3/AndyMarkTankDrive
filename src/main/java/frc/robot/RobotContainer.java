@@ -16,8 +16,8 @@ public class RobotContainer {
   private final Joystick controller = new Joystick(0); //driver station
 
   //axes
-  private final int driveAxis = XboxController.Axis.kLeftY.value;
-  private final int rotationAxis = XboxController.Axis.kRightX.value;
+  private final int driveAxis = XboxController.Axis.kLeftY.value; //left joystick
+  private final int rotationAxis = XboxController.Axis.kRightX.value; //right joystick
 
   public RobotContainer() {
     m_Drivetrain.setDefaultCommand(
@@ -29,9 +29,9 @@ public class RobotContainer {
     );
     configureBindings();
   }
-  //dlu tank
-  private void configureBindings() {
 
+  private void configureBindings() {
+    //No buttons to configure; only joystick
   }
 
  
